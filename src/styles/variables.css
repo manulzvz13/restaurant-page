@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Pacifico&display=swap");
+
+/* CSS Variables */
+
+:root {
+  /* Color palette */
+  --tomato-red: #d72631;
+  --basil-green: #3aa655;
+  --mozzarella-white: #fff8e1;
+  --golden-crust: #ffd700;
+  --charcoal: #222222;
+  /* Font pairings */
+  --font-body: "Open Sans", Arial, sans-serif;
+  --font-headings: "Pacifico", cursive;
+}
