@@ -20,6 +20,7 @@ export default function loadHomePage() {
   headline.textContent = "Welcome to Pizza Palace!";
 
   const description = document.createElement("p");
+  description.className = "pizza-text"
   description.textContent = "The best pizza in town!";
 
   banner.appendChild(img);
