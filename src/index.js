@@ -1,6 +1,6 @@
 import "./styles/reset.css";
 import "./styles/variables.css";
-
+import "./styles/main.css";
 import "./styles/home.css";
 import "./styles/menu.css";
 import "./styles/about.css";
