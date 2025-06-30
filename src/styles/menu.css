@@ -6,8 +6,8 @@ body {
   background-color: var(--mozzarella-white);
   display: flex;
   flex-direction: column;
-  /* justify-content: center;
-  align-items: center; */
+  justify-content: center;
+  /* align-items: center;  */
   min-height: 100vh;
   overflow-y: hidden;
 }
@@ -16,56 +16,63 @@ body {
 
 .logo-div {
   position: fixed;
-  top: 16px;   
-  left: 16px;   
-  z-index: 1000; 
-  background: var(--mozzarella-white); 
-  border-radius: 12px; 
-  padding: 5px;       
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08); 
+  top: 16px;
+  left: 16px;
+  z-index: 1000;
+  background: var(--mozzarella-white);
+  border-radius: 12px;
+  padding: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .logo-div svg {
-  width: 100px;   
-  height: 100px;  
+  width: 100px;
+  height: 100px;
   display: block;
 }
-
 
 /* Header Section */
 
 /* Banner Section */
 
-.banner {
+.menu {
+  background-color: var(--charcoal); /* temporal color */
   position: relative;
   width: 100%;
+  min-height: 944px;
   border-radius: 24px;
   overflow: hidden;
+  text-align: center;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
 }
 
-.banner img {
-  display: block;
-  width: 100%;
-  object-fit: cover;
-  position: relative;
+.menu-item {
+  background-color: var(--mozzarella-white);
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  border-radius: 24px;
-  overflow: hidden;
+  margin: 100px; /* Clamp? */
 }
 
-.banner h1 {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  width: 100%;
-  font-size: 3em;
+.menu-item h1 {
+  font-family: 'Pacifico', cursive; /* Use your special font for item names */
+  color: var(--tomato-red);
+  margin-top: 0;
+  margin-bottom: 10px;
 }
+
+.menu-item p {
+  font-family: 'Open Sans', sans-serif;
+  color: var(--charcoal);
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+
+
 
 /* tabs  */
 
@@ -87,7 +94,7 @@ body {
   font-size: 1.1em;
   font-weight: bold;
   margin-bottom: -0.5em; /* makes the tab "stick out" */
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   cursor: pointer;
   transition: background 0.2s, color 0.2s, box-shadow 0.2s;
   position: relative;
@@ -102,18 +109,8 @@ body {
 .tab.active {
   background: var(--mozzarella-white);
   color: var(--tomato-red);
-  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
   z-index: 2;
 }
 
-/* pizza text */
-
-.pizza-text {
-  background: var(--mozzarella-white);
-  border-radius: 0 0  24px 24px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
-  padding: 1em 2em;
-  margin: 1em 0;
-  margin-top: -0.5em;
-}
 

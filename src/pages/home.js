@@ -1,4 +1,4 @@
-import pizzaBanner from './assets/img/pizza-banner.jpg';
+import pizzaBanner from '../assets/img/pizza-banner.jpg';
 
 export default function loadHomePage() {
   const content = document.querySelector("#content");
@@ -8,7 +8,7 @@ export default function loadHomePage() {
 
   const banner = document.createElement("div");
   banner.className = "banner";
-
+  
   // Clear previous content (optional, for tab switching)
   content.innerHTML = "";
 
@@ -19,14 +19,10 @@ export default function loadHomePage() {
   const headline = document.createElement("h1");
   headline.textContent = "Welcome to Pizza Palace!";
 
-  const description = document.createElement("p");
-  description.className = "pizza-text"
-  description.textContent = "The best pizza in town!";
-
   banner.appendChild(img);
   banner.appendChild(headline);
   homepage.appendChild(banner);
-  homepage.appendChild(description);
+  
 
   content.appendChild(homepage);
 }
