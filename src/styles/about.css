@@ -35,7 +35,7 @@ body {
 
 /* Banner Section */
 
-.menu {
+.about {
   background-color: var(--charcoal); /* temporal color */
   position: relative;
   width: 100%;
@@ -46,7 +46,7 @@ body {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
 }
 
-.menu-item {
+.contactContainer {
   background-color: var(--mozzarella-white);
   border-radius: 12px;
   padding: 15px;
@@ -58,25 +58,19 @@ body {
   margin: 75px; /* Clamp? */
 }
 
-.menu-item h1 {
+.contactContainer h1 {
   font-family: 'Pacifico', cursive; /* Use your special font for item names */
   color: var(--tomato-red);
   margin-top: 0;
   margin-bottom: 10px;
 }
 
-.menu-item p {
+.contactContainer p {
   font-family: 'Open Sans', sans-serif;
   color: var(--charcoal);
   font-size: 0.9em;
   line-height: 1.5;
 }
-
-.menuImg svg {
-  width: 72px;
-  height: 72px;
-}
-
 
 /* tabs  */
 

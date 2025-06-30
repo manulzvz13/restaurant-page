@@ -1,10 +1,13 @@
 import "./styles/reset.css";
 import "./styles/variables.css";
+
 import "./styles/home.css";
 import "./styles/menu.css";
+import "./styles/about.css";
 
 import loadHomePage from "./pages/home.js";
 import loadMenuPage from "./pages/menu.js";
+import loadAboutPage from "./pages/about.js"; 
 
 // Manages active tab styling 
 function setActiveTab(buttonId) {
@@ -31,8 +34,8 @@ function addNavEvents() {
   });
 
   document.querySelector('#about-btn').addEventListener('click', () => {
-    // loadContact();
-    // setActiveTab('about-btn');
+    loadAboutPage();
+    setActiveTab('about-btn');
   });
 }
 
