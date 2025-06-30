@@ -4,10 +4,6 @@ export default function loadMenuPage() {
   const menupage = document.createElement("div");
   menupage.className = "menu";
 
-  // const logo = document.createElement("div");
-  // logo.className = "logo-div";
-  // logo.innerHTML =  pizzaSVG;
-
   // Clear previous content (optional, for tab switching)
   content.innerHTML = "";
 
@@ -43,8 +39,6 @@ export default function loadMenuPage() {
   const descriptionThree = document.createElement("p");
   descriptionThree.className = "description"
   descriptionThree.textContent = "The coke you were waiting for all your life";
-  
-  // document.body.appendChild(logo);
 
   menuItem.appendChild(menuPrincipal);
   menuItem.appendChild(description);

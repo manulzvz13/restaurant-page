@@ -6,18 +6,33 @@ import "./styles/menu.css";
 import loadHomePage from "./pages/home.js";
 import loadMenuPage from "./pages/menu.js";
 
+// Manages active tab styling 
+function setActiveTab(buttonId) {
+  const tabs = document.querySelectorAll('.tab');
+  tabs.forEach(tab => {
+    if (tab.id === buttonId) {
+      tab.classList.add('active');
+    } else {
+      tab.classList.remove('active');
+    }
+  });
+}
+
 // Tab switching logic
 function addNavEvents() {
   document.querySelector('#home-btn').addEventListener('click', () => {
     loadHomePage();
+    setActiveTab('home-btn');
   });
 
   document.querySelector('#menu-btn').addEventListener('click', () => {
     loadMenuPage();
+    setActiveTab('menu-btn');
   });
 
   document.querySelector('#about-btn').addEventListener('click', () => {
     // loadContact();
+    // setActiveTab('about-btn');
   });
 }
 
