@@ -46,6 +46,7 @@ body {
 .banner img {
   display: block;
   width: 100%;
+  min-height: 944px ;
   object-fit: cover;
   position: relative;
   text-align: center;
