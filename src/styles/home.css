@@ -36,14 +36,3 @@
   font-size: 3em;
 }
 
-/* pizza text */
-
-.pizza-text {
-  background: var(--mozzarella-white);
-  border-radius: 0 0  24px 24px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
-  padding: 1em 2em;
-  margin: 1em 0;
-  margin-top: -0.5em;
-}
-
