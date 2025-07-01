@@ -14,6 +14,7 @@ export default function loadHomePage() {
 
   const img = document.createElement("img");
   img.src = pizzaBanner;
+  img.loading = "lazy";
   img.alt = "pizza banner";
 
   const headline = document.createElement("h1");

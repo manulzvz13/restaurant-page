@@ -1,9 +1,5 @@
-/* Header Section */
-
-/* Banner Section */
-
 .menu {
-  background-color: var(--charcoal); /* temporal color */
+  background-color: var(--charcoal); 
   position: relative;
   width: 100%;
   min-height: 944px;
